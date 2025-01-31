@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grassias</title>
-  <script src="assets/tailwind.mjs"></script>
   <link href="assets/stylesheet.css" rel="stylesheet">
+  <script src="assets/tailwind.mjs"></script>
   <link href="assets/swiper-bundle.min.css" rel="stylesheet">
 </head>
 
@@ -414,14 +414,14 @@
 
 
   <!-- our customers -->
-  <div class=" mt-10">
+  <div class=" mt-10" id="waypoint">
     <div class=" mx-auto max-w-6xl pt-[53px] px-5  grass-customer-bg relative">
       <h2 class=" uppercase font-bold text-[40px] mb-10 font-ed text-center text-[#044F27]">Our Customers</h2>
       <p
         class="text-center text-[24px] font-pn font-semibold mb-10 flex justify-center items-center text-[#1F4221] bg-white">
         Formerly <img src="assets/ivisions-green.png" alt="" class="w-[120px] mx-2"> we have been helping fellow
         gardeners for over 10 years with <span
-          class="bg-[#B0D236] px-2 py-3 rounded-lg font-bold ml-2">+<span>50,000</span> orders</span></p>
+          class="bg-[#B0D236] px-2 py-3 rounded-lg font-bold ml-2 w-[199px]">+<span class="grass-timer" data-speed="3000" data-refresh-interval="50" data-from="0" data-to="50000">50,000</span> orders</span></p>
       <div class="grid  md:grid-cols-4 sm:grid-cols-2 grid-cols-1  gap-6">
         <!-- review -->
         <div class=" rounded-4xl drop-shadow-md bg-[#B0D236] items-center  py-8">
@@ -621,22 +621,12 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="assets/swiper-bundle.min.js"></script>
   <script src="./assets/index.js"></script>
+  <script src="./assets/jquery-3.7.1.min.js"></script>
+  <script src="./assets/jquery.waypoints.js"></script>
+  <script src="./assets/counter.js"></script>
+  <script src="./assets/active.js"></script>
 
   <script>
-
-    const swiper = new Swiper('.grass-top-text-play', {
-      loop: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      spaceBetween: 30,
-      speed: 6000,
-      autoplay: {
-        delay: 0,
-
-      },
-
-
-    });
 
   </script>
 
